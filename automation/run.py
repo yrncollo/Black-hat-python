@@ -5,9 +5,8 @@ import subprocess
 # print(result)
 
 ip = input("Enter the IP: ")
-"""
 file = "initial"
-nmap_command =[
+nmap_command = [
         'nmap',
         '-sC',
         '-sV',
@@ -18,7 +17,6 @@ nmap_command =[
 nmap = subprocess.check_output(nmap_command)
 nmap = nmap.decode("utf-8")
 print(nmap)
-"""
 
 
 gobuster_command = [
